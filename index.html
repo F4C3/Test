@@ -3,30 +3,68 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Вебинар</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-    <div class="block">Hello World Hello I am Add changes</div>
-    <article class="theme"></article>
-    <img src="img\Fallout.png" alt="">
-    <ul>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, perspiciatis?</li>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem, ipsum.</li>
-        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-        <li>Lorem ipsum dolor sit amet consectetur.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-    </ul>
-
+    <header class="header">
+        <div class="container">
+            <h1 class="Вебинар">Вебинар</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="form">Заявка на тех.осмотр</h2>
+            <form>
+                Марка атомобиля <input type="text" name="trademark" placeholder="Введите марка авто">
+                <br>
+                <br>
+                Модель <input type="text" name="model" placeholder="Введите модель" required="required">
+                
+                <p>Коробка передач</p>
+                АКП <input type="radio" name="gear" value="auto" checked>
+                МПК <input type="radio" name="gear" value="hand">
+                <br>
+                <br>
+                Необходимо проверить
+                <br>
+                <input type="checkbox" name="type1" value="brake">Тормозная жидкость<br>
+                <input type="checkbox" name="type2" value="paralel">Сход/Развал<br>
+                <input type="checkbox" name="type3" value="coolant">Охлаждающая жидкость<br>
+                <input type="checkbox" name="type4" value="suspension">Подвеска<br>
+                <input type="checkbox" name="type5" value="oil">Масло в двигателе<br>
+                <br>
+                Какое масло заливать?
+                <select name="oil list">
+                    <option label=""></option>
+                    <option label="Motul">Motul</option>
+                    <option label="Shell">Shell</option>
+                    <option label="Castrol">Castrol</option>
+                    <option label="Oleina" disabled>Oleina</option>
+                </select>
+                <br>
+                <br>
+                Цвет подкраски суппортов <br>
+                <input type="color" list="colorlist" value="#cc0000">
+                <datalist ip="colorlist">
+                        <option value="#ff0000" label="красный"></option>
+                        <option value="#080000" label="зелёный"></option>
+                        <option value="#0000ff" label="синий"></option>
+                        <option value="#ffffff" label="белый"></option>
+                        <option value="#cccccc" label="серый"></option>
+                </datalist>
+                <br>
+                <input type="submit">
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-block">
+            <p class="footer-text">Skillfactory</p>
+        </div>
+    </footer>
 </body>
 
 </html>
