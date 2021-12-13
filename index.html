@@ -18,6 +18,8 @@
         <div class="container">
             <h2 class="form">Заявка на тех.осмотр</h2>
             <form>
+                <fieldset>
+                    <legend>Пожалуйста опишите свой автомобиль</legend>
                 Марка атомобиля <input type="text" name="trademark" placeholder="Введите марка авто">
                 <br>
                 <br>
@@ -37,6 +39,12 @@
                 <input type="checkbox" name="type5" value="oil">Масло в двигателе<br>
                 <br>
                 Какое масло заливать?
+                <ul type="A">
+                    <li style="list-style-type: square;" >Motul</li>
+                    <li style="list-style-type: square;" >Shell</li>
+                    <li style="list-style-type: square;" >Castrol</li>
+                    <li style="list-style-type: square;" >Oleina</li>
+                </ul>
                 <select name="oil list">
                     <option label=""></option>
                     <option label="Motul">Motul</option>
@@ -47,17 +55,54 @@
                 <br>
                 <br>
                 Цвет подкраски суппортов <br>
-                <input type="color" list="colorlist" value="#cc0000">
-                <datalist ip="colorlist">
-                        <option value="#ff0000" label="красный"></option>
-                        <option value="#080000" label="зелёный"></option>
-                        <option value="#0000ff" label="синий"></option>
-                        <option value="#ffffff" label="белый"></option>
-                        <option value="#cccccc" label="серый"></option>
+                <input type="color" list="colorlist" value="#806b2a">
+                <datalist id="colorlist">
+                    <option value="#806b2a" label="Хаки"></option>
+                    <option value="#b784a7" label="Оперный розовато-лиловый"></option>
+                    <option value="#84c3be" label="Светлый серо-синий"></option>
+                    <option value="#232c16" label="Тёмный оливково-зелёный"></option>
+                    <option value="#414a4c" label="Космос"></option>
                 </datalist>
                 <br>
-                <input type="submit">
+                <br>
+                Дата визита<br>
+                <input type="date" name="visit" value="2021-12-13" min="2021-12-13" max="2021-12-28">
+                <br>
+                <br>
+                Ваша почта
+                <br>
+                <input type="email" name="mail">
+                <br>
+                <br>
+                Ваш телефон
+                <br>
+                <input type="tel" name="phone">
+                <br>
+                <br>
+                <input type="submit" name="submit" value="Отправить">
+                <input type="reset" name="reset" value="Сбросить">
+                </fieldset>
+                <p>Прогресс тех.осмотра</p>
+                <progress value="25" max="100"></progress>
+                <fieldset>
+                    <legend>Обратная связь</legend>
+                    Оцените качество услуг
+                    <input type="range" min="0" max="10" step="1" value="7">
+                    <br>
+                    <br>
+                    Что бы хотелось улучшить? <br>
+                    <textarea name="comment" id="" cols="50" rows="7" placeholder="Ваши предложения"></textarea>
+                    <br>
+                    <br>
+                    Порекомендуете наш сервис?
+                    <br>
+                    <label for="yes">Да</label>
+                    <input type="radio" id="yes" name="choise" value="yes" checked>
+                    <label for="no">Нет</label>
+                    <input type="radio" id="no" name="choise" value="no">
+                </fieldset>
             </form>
+
         </div>
     </main>
     <footer class="footer">
